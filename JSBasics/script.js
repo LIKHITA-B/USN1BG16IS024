@@ -30,7 +30,7 @@ names.push('liki');
 names.unshift('bnmit');
 names.pop();
 console.log(names);
-*/
+
 var tot=['124','48','268'];
 var tip1,tip2,tip3;
 for( i=0;i<3;i++)
@@ -100,3 +100,66 @@ bnm.fname='qwerty';
 console.log(bnm);
 console.log('liki is'+myDetails.calage(1997)+"old")
 */
+
+
+//3
+//onmouseover
+//document.getElementById('btn').onmouseover=changeOnMouseOver;
+//document.getElementById('btn').onmouseout=changeOnMouseOut;
+/*
+
+function changeOnMouseOver(){
+    var but=document.getElementById('btn');
+    but.style.background="red";
+}
+function changeOnMouseOut(){
+    var but=document.getElementById('btn');
+    but.style.background="blue";
+
+}
+*/
+
+/*
+//this useage
+function changeOnMouseOver(){
+    //var but=document.getElementById('btn');
+    this.style.background="red";
+}
+function changeOnMouseOut(){
+    //var but=document.getElementById('btn');
+   this.style.background="blue";
+
+}
+*/
+/*
+document.getElementById('btn').onmouseover=function(){
+    this.style.background="red";
+}
+
+document.getElementById('btn').onmouseout=function(){
+    this.style.background="blue";
+};
+*/
+ /*
+document.getElementById('btn').onclick=function(){
+   alert("you clicked");
+};
+*/
+/*
+var but=document.getElementById('btn');
+but.addEventListener('mouseover',changeOnMouseOver);
+but.addEventListener('mouseout',changeOnMouseOut);
+function changeOnMouseOver(){
+    //var but=document.getElementById('btn');
+    this.style.background="red";
+}
+function changeOnMouseOut(){
+    //var but=document.getElementById('btn');
+   this.style.background="blue";
+
+}
+*/
+
+
+// querySelector method for manipulating dom
+document.querySelector('#hId').textContent="new text";//overridden the text heading
